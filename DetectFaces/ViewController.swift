@@ -42,6 +42,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             view.layer.addSublayer(previewLayer)
             
             let dataOutput = AVCaptureVideoDataOutput()
+            
+            
             dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
             captureSession.addOutput(dataOutput)
             
@@ -55,6 +57,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
        
     }
 
+
+  
+    
+    
     
     fileprivate func setupIdentifierConfidenceLabel() {
         view.addSubview(identifierLabel)
@@ -66,16 +72,22 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
+        
         let image = VisionImage(buffer: sampleBuffer)
+        let orientation = Utils.imageOrientation(
+            fromDevicePosition: .front
+            )
+
+            image.orientation = orientation
         let faceDetector = FaceDetector.faceDetector(options: options)
         faceDetector.process(image) { faces, error in
           guard error == nil, let faces = faces, !faces.isEmpty else {
-            // ...
+            
             return
           }
 
             self.processOutput(results: faces)
-          // ...
+          
         }
 
     }

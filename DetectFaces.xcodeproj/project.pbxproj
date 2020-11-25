@@ -16,6 +16,7 @@
 		5D32798D256DC65D0066761B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D32798B256DC65D0066761B /* LaunchScreen.storyboard */; };
 		5D327998256DC65D0066761B /* DetectFacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D327997256DC65D0066761B /* DetectFacesTests.swift */; };
 		5D3279A3256DC65D0066761B /* DetectFacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3279A2256DC65D0066761B /* DetectFacesUITests.swift */; };
+		5D3279E5256DEF080066761B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3279E4256DEF080066761B /* Utils.swift */; };
 		A319F54CE7F14E3E03812F8A /* Pods_DetectFacesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3E05463A8590612BDFE867 /* Pods_DetectFacesTests.framework */; };
 		E995E73B0C0B3CCB3374996E /* Pods_DetectFaces_DetectFacesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47314B83BE5599F4EA53C2D6 /* Pods_DetectFaces_DetectFacesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		5D32799E256DC65D0066761B /* DetectFacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectFacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3279A2256DC65D0066761B /* DetectFacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectFacesUITests.swift; sourceTree = "<group>"; };
 		5D3279A4256DC65D0066761B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D3279E4256DEF080066761B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5FF6474D09DEBCD8E17C7B85 /* Pods-DetectFacesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectFacesTests.debug.xcconfig"; path = "Target Support Files/Pods-DetectFacesTests/Pods-DetectFacesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		86E4ACE114ACFE1A03975248 /* Pods_DetectFaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectFaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88905B4197F67AB5774B0BE0 /* Pods-DetectFaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectFaces.release.xcconfig"; path = "Target Support Files/Pods-DetectFaces/Pods-DetectFaces.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				5D327980256DC65A0066761B /* AppDelegate.swift */,
 				5D327982256DC65A0066761B /* SceneDelegate.swift */,
 				5D327984256DC65A0066761B /* ViewController.swift */,
+				5D3279E4256DEF080066761B /* Utils.swift */,
 				5D327986256DC65A0066761B /* Main.storyboard */,
 				5D327989256DC65D0066761B /* Assets.xcassets */,
 				5D32798B256DC65D0066761B /* LaunchScreen.storyboard */,
@@ -445,6 +448,7 @@
 				5D327985256DC65A0066761B /* ViewController.swift in Sources */,
 				5D327981256DC65A0066761B /* AppDelegate.swift in Sources */,
 				5D327983256DC65A0066761B /* SceneDelegate.swift in Sources */,
+				5D3279E5256DEF080066761B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
