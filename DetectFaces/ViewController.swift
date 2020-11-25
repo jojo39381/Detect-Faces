@@ -21,6 +21,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let options = FaceDetectorOptions()
    
     override func viewDidLoad() {
